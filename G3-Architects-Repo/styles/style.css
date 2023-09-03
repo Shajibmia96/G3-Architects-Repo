@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+header{
+    background-color: #ff8f0e1e;
+}
+.Header-title{
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.Menu-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Menu-bar li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 20px 0px;
+}
+.Header-title{
+    margin-left: 20px;
+    padding: 20px 0px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.Menu-bar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    
+}
