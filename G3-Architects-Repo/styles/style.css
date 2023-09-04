@@ -80,7 +80,7 @@ header{
 /* mainstyles */
 main{
     max-width: 1440px;
-    margin: 0px auto;
+    margin: 90px auto;
 }
 
 
@@ -89,9 +89,12 @@ main{
     display: flex;
     margin-top: 50px;
     align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .contact-wrapper{
     margin-left: 50px;
+     
 }
 .images-container{
     display: grid;
@@ -129,13 +132,26 @@ main{
     .banner-container{
         width: 400px;
     }
+    .features-container{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main{
+       max-width: 0px;
+        margin: 20px auto;
+    }
+   
+    .images-container{
+        grid-template-columns: 1fr;
+    }
 }
-
+/* ............................................................................... */
 @media screen and (min-width:677px)and (max-width:960px){
     header{
         padding: 20px 40px;
     }  
-    .navbar{
+    .navbar ,.features-container{
         flex-direction: column;
 }
 .navbar ul{
@@ -145,4 +161,5 @@ main{
 .banner-container{
     width: 500px;
 }
+  
 }
