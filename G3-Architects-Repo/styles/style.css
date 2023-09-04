@@ -77,6 +77,41 @@ header{
 .banner img{
     width: 100%;
 }
+/* mainstyles */
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+
+/* feature styles */
+.features-container{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.contact-wrapper{
+    margin-left: 50px;
+}
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 1.25rem;
+}
+.features-destription{
+    margin: 20px auto;
+    color: #727272;
+}
+.features-title{
+    font-size: 45px;
+    font-weight: 500;
+}
+.list{
+    color: #727272;
+}
+.Features{
+    color: #FF900E;
+}
 
 /* Media query */
 @media screen and (max-width:576px){
