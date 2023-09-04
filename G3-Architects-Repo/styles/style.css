@@ -1,16 +1,23 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,900;1,700&family=Open+Sans:ital,wght@0,700;0,800;1,400;1,500&family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
+
 *{
     margin: 0px;
     padding:0px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 header{
-    background-color: #ff8f0e1e;
+    background-color: rgb(255, 144, 14, 0.10);
+    padding: 50px 240px;
 }
-.Header-title{
 
-}
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .Menu-bar ul{
     display: flex;
@@ -19,22 +26,88 @@ header{
 
 .Menu-bar li{
     list-style: none;
-    margin-left: 20px;
-    padding: 20px 0px;
-}
-.Header-title{
-    margin-left: 20px;
-    padding: 20px 0px;
-    color: black;
+    margin-right: 22px;
     font-size: 18px;
-    font-weight: 700;
+   font-weight: 500;
+   line-height: 26px;
+}
+.nav-title{
+    color: #131313;
+    font: size 2.1rem;
+    font-weight: 500;
     
 }
 .Menu-bar li a{
     text-decoration: none;
-    color: black;
+    color: #424242;
     font-size: 18px;
     font-weight: 700;
     justify-content: center;
     
+}
+
+/* banner */
+.banner-container{
+    width: 862px;
+    text-align: center;
+    margin: 60px auto;
+    
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: #424242;
+}
+.bnt-pramary{
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.banner img{
+    width: 100%;
+}
+
+/* Media query */
+@media screen and (max-width:576px){
+    header{
+        padding: 20px 20px;
+    }  
+    .navbar{
+        flex-direction: column;
+        
+    }  
+    .navbar ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .banner-container{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:677px)and (max-width:960px){
+    header{
+        padding: 20px 40px;
+    }  
+    .navbar{
+        flex-direction: column;
+}
+.navbar ul{
+    
+    margin-top: 20px;
+}
+.banner-container{
+    width: 500px;
+}
 }
